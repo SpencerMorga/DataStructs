@@ -153,8 +153,8 @@ namespace Data_Structures
             notrelevant.Dequeue();
             notrelevant.Printlist();
             ///12
-            notrelevant.Dequeue();
-            notrelevant.Printlist();
+            // notrelevant.Dequeue();
+            // notrelevant.Printlist();
             //System.Collections.Generic.Queue<int> test = new System.Collections.Generic.Queue<int>();
 
             //test.Dequeue();

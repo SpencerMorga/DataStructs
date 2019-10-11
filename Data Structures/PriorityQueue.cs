@@ -39,6 +39,7 @@ namespace Data_Structures
         public void Enqueue(T val, int prior)
         {
             //increase size
+            /*
             if (Count >= Capacity)
             {
                 Capacity *= 2;
@@ -49,9 +50,20 @@ namespace Data_Structures
                     temp[i] = PriorityList[i];
                 }
 
+                
                 PriorityList = temp;
             }
+            */
+            if (Count >= Capacity)
+            {
+                Capacity *= 2;
+                PNode<T>[] temp = new PNode<T>[Capacity];
 
+                for (int i = 0; i < PriorityList.Length; i++)
+                {
+                    temp[i] = PriorityList[i];
+                }
+            }
 
             for (int i = 0; i < PriorityList.Length; i++)
             {
@@ -66,7 +78,7 @@ namespace Data_Structures
 
             Count++;
             Sort();
-
+            /// calls below class
 
         }
 
